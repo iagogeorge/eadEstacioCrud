@@ -1,0 +1,115 @@
+
+table.toggle tr.highlighted { 
+	background-color: Transparent; 
+	/*
+	border-top: 1px solid #333333;
+    border-left: 1px solid #333333;
+	border-bottom: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	*/
+    background-color:white;
+}
+
+table.toggle tr.highlighted span { background-color: transparent ; }
+table.toggle tr.highlighted td.fixo-prod-serv-numero { background-color: transparent ; }
+
+body { background-color: #fff; }
+
+label { display: block; font-family: Verdana, Arial, Helvetica; font-size: 10px;  font-weight: bolder; background-color: Transparent /*#666*/; color: #000; padding-left: 6px; }
+
+span { 
+	display: block; 
+	font-family: Verdana, Arial, Helvetica; 
+	font-size: 10px; 
+	padding: 2px 2px 2px 6px; 
+	border-top: 1px solid #3377CC;
+	border-left: 1px solid #3377CC;
+	background-color:#D0E5FB;
+}
+
+label.new { color: Blue; }
+span.new { color: Blue; background-color: #ffc; }
+span.multiline { 
+	height: auto; 
+	min-height: 1.5em; 
+	border-top: 1px solid #333333; 
+	border-top: 1px solid #3377CC;  
+	border-left: 1px solid #3377CC; 
+	background-color:#D0E5FB;
+}
+fieldset { background-color: #f9f9f9; margin: 10px 0px 0px 0px; _position: relative; /* border: 1px solid #ccc; */ _padding: 17px 10px 5px 10px; _margin-top: 20px; }
+
+/*fieldset table { width: 100%; }*/
+tr.col-5 td { width: 20%; }
+tr.col-4 td { width: 25%; }
+tr.col-3 td { width: 33.333%; }
+tr.col-2 td { width: 50%; }
+td.fixo-nfe-cpf-cnpj { width: 150px; }
+td.fixo-nfe-iest { width: 120px; }
+td.fixo-nfe-uf { width: 50px; }
+td.fixo-entrega-cnpj { width: 35%; }
+td.fixo-entrega-uf { width: 7%; min-width: 45px; }
+td.fixo-prod-serv-numero { width: 45px; padding-left: 20px; }
+td.fixo-prod-serv-descricao { }
+td.fixo-prod-serv-qtd { width: 65px; }
+td.fixo-prod-serv-uc { width: 125px; }
+td.fixo-prod-serv-vu { width: 125px; }
+td.fixo-prod-serv-vb { width: 125px; }
+
+.toggle { background: Transparent url(  '../Imagens/ico_mais.gif' ) no-repeat 8px 0px ; cursor: pointer; 
+}
+.opened { background: Transparent url(  '../Imagens/ico_menos.gif' ) no-repeat 8px 0px ; cursor: pointer; 
+border-top: 1px solid #333333;    
+    border-left: 1px solid #333333;     	
+	border-bottom: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+    background-color:white;}
+    
+td.spacer { background-color: Green; background-position: 10px 1px; }
+
+#nfe-container { text-align: left; /* ie */ }
+pre { font-size: 10px; white-space: pre-wrap; word-wrap: break-word; padding: 0px 15px 0px 15px; }
+.botao-aba-nfe { font-family: Verdana, Arial, Helvetica; font-size: 12px; font-weight: bolder; border-radius: 4px 4px 0px 0px; background-color: #ccc; margin: 5px 0px 0px 0px; padding: 2px; }
+.botao-aba-nfe-selected { background-color: #fff; }
+td { vertical-align: top; }
+td.fixo-cpf-cnpj { width: 150px; }
+td.fixo-iest { width: 120px; }
+table { width: 100%; }
+h5.toggle { padding-left: 24px; background-position: 0px 0px ; }
+h5.opened { padding-left: 24px; background-position: 0px 0px ; }
+table.toggle { padding-left: 16px; text-indent: 0px; background-color: Transparent; }
+table.opened { background-color: Transparent ; }
+td.toggle { background-color: Transparent; }
+legend { _position: absolute; _top: -10px; padding: 0 10px 0 10px; font-family: Verdana, Arial, Helvetica; font-size: 10px; _left: 2px; border: none; font-weight: bolder; border-bottom: 1px solid #aaa; border-top: 1px solid #aaa; width: 98%; _width: 100% /* ie */; color: #333; padding-top: 1px; padding-bottom: 1px; text-transform: uppercase; background:#eeeeee; }
+legend.titulo-aba { text-align: left; display: block; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; text-transform: none; font-size: 11px ; background:#eeeeee; color:#000000;}
+legend.titulo-aba-interna { text-align: left; display: block; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; text-transform: none; font-size: 11px ; background:#eeeeee; color:#000000;}
+.titulo-grid-interna { text-align: left; display: block; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; text-transform: none; font-size: 11px ; background :Transparent; color:#000000;}
+legend.toggle { padding-left: 20px; background-position: 6px 0px ;  color:#000000; }
+legend.opened { padding-left: 20px; background-position: 6px 0px ;  color:#000000;}
+
+fieldset { border-bottom: none; border-left: none; border-right: none; border-top: none; }
+fieldset { background-color: Transparent; }
+.boxed { background-color: #fafafa; }
+h5 { padding: 0px; margin: 0px; font-family: Verdana, Arial, Helvetica; font-size: 12px; }
+h1 { padding: 5px 5px 5px 5px; margin: 5px 0 5px 0; color: #109EFF; font-size: 18px; font-family: Arial Narrow; font-style: italic;}
+.fieldset-internal { color: Gray; font-weight: bolder; }
+i.eng { font-size: 9px; }
+
+#print-header { display: block; height: 100px; }
+#print-header-logo { display: block; float: left; width: 96px; height: 96px; background: transparent url(  '../Imagens/brasao_rs_small.png' ) 0 0 no-repeat scroll; }
+#print-header-titulo { display: block; float: left; padding-top: 40px; font-family: Verdana, Arial, Helvetica; font-size: 18px; }
+#print-header-titulo-param { display: block; text-align: center; font-family: Verdana, Arial, Helvetica; font-size: 22px; font-weight: bolder; }
+#print-nfe-info { font-size: 11px; font-family: Verdana, Arial, Helvetica; }
+
+#footer { font-family: Verdana, Arial, Helvetica; font-size: 11px; }
+
+div.tbl-aut-uso { background-color: #eee; border-radius: 5px; padding: 2px 2px 2px 2px; }
+div.tbl-aut-uso span.subtitle { font-weight: bolder; background-color: #eee; font-size: 11px; }
+div.tbl-aut-uso table { background-color: White; padding-top: 5px; margin-bottom: 5px; border-radius: 5px; }
+div.tbl-aut-uso table td { font-family: Verdana, Arial, Helvetica; font-size: 11px; }
+div.tbl-aut-uso table td.itm { padding-left: 20px; width: 25%; }
+div.tbl-aut-uso table td.val { padding-left: 20px; }
+
+div.Formulario { /* display:block ;*/ top: 0px ; left: 0px ; }
+span#tipo-ambiente { border: 1px solid #880; margin-left: 5px; margin-top: 5px; font-weight: bolder; background-color: #ffc; height: 20px; }
+span#tipo-ambiente img { margin-top: 2px; }

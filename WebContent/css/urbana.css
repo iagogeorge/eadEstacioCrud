@@ -1,0 +1,438 @@
+BODY {
+	background-color: White;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	scrollbar-face-color: #A5B9D7;
+	scrollbar-highlignt-color: #FFFFFF;
+	scrollbar-shadow-color: #486088;
+	scrollbar-3dlight-color: #98acc0;
+	scrollbar-arrow-color: #ffffff;
+	scrollbar-track-color: #D8E1ED;
+	scrollbar-darkshadow-color: #000000;
+}
+
+.tituloCampoWhite {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	COLOR: #00398c;
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+HR {color ="#000066";
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+select {
+	background-color: #D8E1ED;
+	border: 3px outset #D8E1ED;
+	border-bottom: 2px outset #D8E1ED;
+	font-size: 11;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+input.button {
+	background-color: #D8E1ED;
+	border: 3px outset #D8E1ED;
+	border-bottom: 2px outset #D8E1ED;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+A.Link {
+	font-family: Verdana;
+	font-size: 11px;
+	color: Navy;
+	list-style-type: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+A.Link:active {
+	color: #FF8C00;
+}
+
+A.Link:hover {
+	font-family: Verdana;
+	color: #FF8C00;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+A.LinkPaginacao:link {
+	color: #00398C;
+	TEXT-DECORATION: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12;
+	font: bolder;
+}
+
+A.LinkPaginacao:visited {
+	color: #00398C;
+	TEXT-DECORATION: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12;
+	font: bolder;
+}
+
+A.LinkPaginacao:hover {
+	COLOR: #FF8000;
+	TEXT-DECORATION: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12;
+	font: bolder;
+}
+
+A.linkConsolidacao:Link {
+	font-family: Verdana;
+	font-size: 11;
+	color: #ff3300;
+	list-style-type: none;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+A.linkConsolidacao:hover {
+	font-family: Verdana;
+	font-size: 11;
+	color: #ff3300;
+	list-style-type: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+A.linkConsolidacao:visited {
+	font-family: Verdana;
+	font-size: 11;
+	color: #ff3300;
+	list-style-type: none;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+A.linkCID {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #00398C;
+	font: bolder;
+	text-align: left;
+	TEXT-DECORATION: none;
+}
+
+A.linkCID:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #00398C;
+	font: bolder;
+	text-align: left;
+	TEXT-DECORATION: none;
+}
+
+.TituloPrincipal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: Navy;
+	font: bolder;
+	text-align: center;
+}
+
+.TituloCadastro {
+	background-color: #A5B9D7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #00398C;
+	font: normal;
+	font: bolder;
+	text-align: center;
+}
+
+.TituloCampo {
+	background-color: #A5B9D7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #00398C;
+	font: normal;
+}
+
+.Texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11;
+	color: Black;
+}
+
+.CampoForm {
+	background-color: #D8E1ED;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399;
+}
+
+.CampoForm2 {
+	background-color: #D8E1ED;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399;
+	font: bolder;
+	text-align: center;
+}
+
+.CampoObrigatorio {
+	Border: 1px solid #FFA500;
+	Color: Black;
+	Font-Family: Arial, Helvetica, sans-serif;
+	List-Style: disc;
+	font-size: x-small;
+}
+
+.CampoNaoObrigatorio {
+	Border: 1px solid #191970;
+	Color: Black;
+	Font-Family: Arial, Helvetica, sans-serif;
+	List-Style: disc;
+	font-size: x-small;
+}
+
+.CampoReadOnly {
+	Border: 1px solid #191970;
+	Color: Black;
+	Font-Family: Arial, Helvetica, sans-serif;
+	List-Style: disc;
+	font-size: x-small;
+	background-color: #D8E1ED;
+}
+
+.CampoReadOnlysemBorda {
+	Border: 1px solid #191970;
+	Color: White;
+	Font-Family: Arial, Helvetica, sans-serif;
+	List-Style: disc;
+	font-size: x-small;
+	background-color: #D8E1ED;
+}
+
+.TabelaCadastro {
+	background-color: white;
+	margin: 0px;
+	width: 100%;
+}
+
+.TabelaCadastro th {
+	background-color: #A5B9D7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #00398C;
+	font: bolder;
+	text-align: center;
+}
+
+.TabelaCadastro th.sorted {
+	background-color: #A5B9D7;
+	background-color: #A5B9D7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #00398C;
+	font: bolder;
+	text-align: center;
+}
+
+.TabelaCadastro th.sorted a,.TabelaCadastro th.sortable a {
+	background: url("../imagens/arrow_off.png") no-repeat right;
+	color: #00398C;
+	text-decoration: none;
+}
+
+.TabelaCadastro th.sorted a:hover,.TabelaCadastro th.sortable a:hover {
+	color: red;
+}
+
+.TabelaCadastro th.order1 a {
+	background-image: url("../imagens/arrow_up.png");
+}
+
+.TabelaCadastro th.order2 a {
+	background-image: url("../imagens/arrow_down.png");
+}
+
+.TabelaCadastroLinha {
+	background-color: #D8E1ED;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399;
+	font: normal;
+}
+
+.TabelaCadastroLinhaSel {
+	background-color: #003399;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #D8E1ED;
+	font: normal;
+}
+
+.TabelaCadastroLinhaIcone {
+	background-color: #D8E1ED;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399;
+	font: normal;
+	width: 40px;
+	text-align: center;
+}
+
+.TabelaCadastroPublicacao {
+	background-color: #D8E1ED;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399;
+	font: normal;
+	text-align: center;
+}
+
+.TabelaCadastroLinhaIconeSel {
+	background-color: #003399;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #D8E1ED;
+	font: normal;
+	width: 40px;
+	text-align: center;
+}
+
+.TabelaCadastroPublicacaoSel {
+	background-color: #003399;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #D8E1ED;
+	font: normal;
+	text-align: center;
+}
+
+.Versao {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399;
+	font: normal;
+}
+
+.SelecaoPaginacao {
+	COLOR: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12;
+	font: bolder;
+}
+
+A.link2:ACTIVE {
+	color: white;
+}
+
+A.link2 {
+/* 	font-family: Arial, Helvetica, sans-serif; */
+	font-size: 15px;
+	color: #003399;
+	list-style-type: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+A.link2:HOVER {
+/* 	font-family: Arial, Helvetica, sans-serif; */
+/* 	color: white; */
+	font-size: 15px;
+	font-weight: 900;
+}
+
+A.link2Sel:ACTIVE {
+	color: white;
+}
+
+A.link2Sel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: white;
+	list-style-type: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+A.link2Sel:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 12px;
+	font-weight: normal
+}
+
+A.link3:ACTIVE {
+	color: white;
+}
+
+A.link3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399;
+	list-style-type: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+A.link3:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	color: orange;
+	font-size: 12px;
+	font-weight: normal
+}
+
+A.link3Sel:ACTIVE {
+	color: orange;
+}
+
+A.link3Sel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: orange;
+	list-style-type: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+A.link3Sel:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	color: orange;
+	font-size: 12px;
+	font-weight: normal
+}
+
+.headerModal {
+	color: black;
+	font-size: 16px;
+	text-align: center;
+	font-weight:bold;
+}
+
+.corpoModal {
+color: black;
+word-spacing: 5px;
+line-height: 20px;
+}
+
+/*class adicionada para customização dos botões*/
+a.botao {
+	background-color: #336799;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    min-width: 75px;
+    padding: 1px 6px;
+    vertical-align: top;
+    text-decoration: none;
+}
+a.botao:hover, a.botao:focus {
+ 	color:#FFA500;
+ 	font-weight:bold;
+}
