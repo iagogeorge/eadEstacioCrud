@@ -30,16 +30,16 @@ public class UsuarioSistemaControllerRep {
 			List<UsuarioBean> consultarLogin = consultarLogin(usuario);
 
 			if (!consultarLogin.isEmpty()) {
-				msg = "<font color=\\\"red\\\">E-mail já cadastrado para outro usuário.</font>";
+				msg = "2";
 			} else {
 
 				dao.cadastrarUsuarioSistema(usuario);
-				msg = "Usuário cadastrado com sucesso.";
+				msg = "1";
 
 			}
 
 		} catch (Exception e) {
-			msg = "<font color=\"red\">Não foi possível cadastrar o usuário</font>";
+			msg = "3";
 
 		}
 		return msg;

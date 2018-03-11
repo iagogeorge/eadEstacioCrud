@@ -10,15 +10,30 @@
 <title>Cadastro de Produtos</title>
 <!-- <link rel="shortcut icon" type="image/x-icon" href="http://www.vemgranderecife.com.br/wp-content/themes/vem-wnts-wp/favicon.ico"> -->
 <meta name="layout" content="main" />
+<!-- *.css -->
 <link rel="stylesheet" href="css/style2.css" type="text/css" />
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<!-- *.fim -->
 
+<!-- *.js -->
 <script src="js/utilitarios.js" type="text/javascript"></script>
 <script src="js/jsapi.js" type="text/javascript"></script>
 <script src="js/jquery/jquery-1.12.3.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/bootstrap/bootbox.min.js" type="text/javascript"></script>
+<!--fim dos *.js -->
+
+
+<!-- imports do header e do footer -->
+<c:import var = "footer" url = "footer.jsp"/>
+<c:import var = "header" url = "header.jsp"/>
+<!-- fim imports do header e do footer -->
+
+
 <script language="JavaScript" type="text/JavaScript" charset="utf-8">
+	
+
+	
 	bootbox.setDefaults({
 	  locale: "br",
 	  show: true,
@@ -43,7 +58,7 @@
 
 
 	function alterarCan(idCana) {
-		var id = "<%=request.getAttribute("id")%>";
+		var id = "${id}";
 		$("#formConsCanal").append("<input type='hidden' name='idCana' value="+idCana+">");
 		formConsCanal.id.value=id;
 		formConsCanal.alterarCan.value = "true";
@@ -61,8 +76,8 @@
 		return true;
 	}
 
-	function consultarC() { console.log("tsssss");
-		var id = "<%=request.getAttribute("id")%>";
+	function consultarC() { 
+		var id ="${id}";
 		if (validarCampo()) {
 			formConsCanal.id.value = id;
 			formConsCanal.consultarCan.value = "true";
@@ -89,8 +104,7 @@
 	}
 
 	setTimeout(function() {
-		bootbox.alert("Prezado Usuário(a), sua sessão foi expirada!",
-				function() {
+		bootbox.alert("Prezado Usuário(a), sua sessão foi expirada!",function() {
 					formConsCanal.action = "logout";
 					formConsCanal.submit();
 				})
@@ -208,7 +222,7 @@
 				</div>
 			</div>
 		</div>
-		<%@ include file="footer.jsp"%>
+		${footer}
 	</form>
 </body>
 </html>

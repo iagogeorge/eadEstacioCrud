@@ -15,6 +15,9 @@
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/bootstrap/bootbox.min.js" type="text/javascript"></script>
 
+<!-- imports do header e do footer -->
+<c:import var = "footer" url = "WEB-INF/jsp/footer.jsp"/>
+<!-- fim imports do header e do footer -->
 
 <meta charset="UTF-8">
 <title>Login</title>
@@ -27,21 +30,14 @@
 </head>
 <script type="text/javascript">
 function verificacao() {
-var msg = "<%=request.getAttribute("msg")%>";
+var msg = "${msg}";
+
 		if (msg == "2") {
-			bootbox
-					.alert(
-							"email ou senha incorretos, ou usuário ainda não foi cadastrado.",
-							function() {
-							})
+			bootbox.alert("email ou senha incorretos, ou usuário ainda não foi cadastrado.",function() {})
 			return false;
 
-		}else if (msg == "3"){
-			bootbox
-			.alert(
-					"Por favor informe seu e-mail e senha cadastrados para ter acesso ao sistema.",
-					function() {
-					})
+		}else if (msg == "3") {
+			bootbox.alert("Por favor informe seu e-mail e senha cadastrados para ter acesso ao sistema.",function() {})
 	return false;
 		}
 	}
@@ -74,7 +70,7 @@ var msg = "<%=request.getAttribute("msg")%>";
 
 	<script
 		src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<%@ include file="/WEB-INF/jsp/footer.jsp"%>
+${footer}
 </body>
 
 </html>

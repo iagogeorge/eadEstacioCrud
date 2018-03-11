@@ -19,6 +19,11 @@ import br.com.estacio.controller.rep.UsuarioSistemaControllerRep;
 @WebServlet(urlPatterns = "/login")
 public class Login extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8405448445486237115L;
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String msg = null;
@@ -29,7 +34,7 @@ public class Login extends HttpServlet {
 			UsuarioBean usuario = null;
 			UsuarioSistemaControllerRep usuarioRep = new UsuarioSistemaControllerRep();
 			List<UsuarioBean> listaLogin = null;
-			
+
 			usuario = new UsuarioBean();
 			usuario.setEmail(email);
 			usuario.setSenha(senha);
@@ -55,19 +60,18 @@ public class Login extends HttpServlet {
 				}
 
 			} catch (ClassNotFoundException | NamingException | SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
-		}else {
-			
-			msg  = "3";
+		} else {
+
+			msg = "3";
 			req.setAttribute("msg", msg);
 			req.setAttribute("email", email);
 			req.setAttribute("password", senha);
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
 			dispatcher.forward(req, resp);
-			
+
 		}
 
 	}

@@ -17,6 +17,11 @@ import br.com.estacio.controller.rep.UsuarioSistemaControllerRep;
 @WebServlet(urlPatterns = "/cadUsuario")
 public class cadUsuario extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -600555170259091001L;
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String voltar = req.getParameter("voltar");
@@ -42,11 +47,13 @@ public class cadUsuario extends HttpServlet {
 
 			try {
 				String resposta = rep.cadastrarUsuarioSistema(usuario);
+				req.setAttribute("nome", nome);
+				req.setAttribute("login", login);
+				req.setAttribute("email", email);
+				req.setAttribute("telefone", fone);
 				req.setAttribute("msgAlerta", resposta);
 
-				System.out.println(resposta);
 			} catch (ClassNotFoundException | NamingException | SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} else if (logout) {
