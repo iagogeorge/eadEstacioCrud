@@ -24,6 +24,15 @@ public class Login extends HttpServlet {
 	 */
 	private static final long serialVersionUID = 8405448445486237115L;
 
+	
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	doPost(req, resp);
+	
+	}
+	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String msg = null;
@@ -54,7 +63,7 @@ public class Login extends HttpServlet {
 
 					HttpSession session = req.getSession();
 					session.setAttribute("usuarioLogado", listaLogin);
-					RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/jsp/consProduto.jsp");
+					RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/consProduto");
 					dispatcher.forward(req, resp);
 
 				}

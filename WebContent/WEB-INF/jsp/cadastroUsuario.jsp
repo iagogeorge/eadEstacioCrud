@@ -6,16 +6,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Cadastro de Usuários</title>
-<!-- <link rel="shortcut icon" type="image/x-icon" href="http://www.vemgranderecife.com.br/wp-content/themes/vem-wnts-wp/favicon.ico"> -->
 <meta name="layout" content="main" />
-<link rel="stylesheet" href="css/style2.css" type="text/css" />
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-
-<script  src="js/utilitarios.js"type="text/javascript"></script>
-<script src="js/jsapi.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script src="js/jquery/jquery-1.12.3.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/bootstrap/bootbox.min.js" type="text/javascript"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap/bootbox.min.js" charset=ISO-8859-1></script>
+<link href="" type="text/css" media="screen, projection"
+	rel="stylesheet" />
+<link href="css/bootstrap.min.css" rel="stylesheet" charset=ISO-8859-1">
+<link href="css/style2.css" rel="stylesheet">
+<script language="javascript" src="js/Calendario.js" type=""></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script language="javascript" src="js/utilitarios.js" charset="utf-8"
+	type=""></script>
 
 <!-- imports do header e do footer -->
 <c:import var = "footer" url = "footer.jsp"/>
@@ -129,10 +136,10 @@
 		bootbox.alert("Prezado Usuário(a), sua sessão foi expirada!",
 				function() {
 					document.formCadUsuario.logout.value = true;
-					formCadUsuario.action = "cadUsuario";
+					formCadUsuario.action = "logout";
 					formCadUsuario.submit();
 				})
-	}, 900000);
+	}, 300000);
 </script>
 </head>
 <body onload="verificacao();" style="background-color: #dae0e7">
