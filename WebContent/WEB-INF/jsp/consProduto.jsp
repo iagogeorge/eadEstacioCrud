@@ -17,7 +17,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap/bootbox.min.js" charset=ISO-8859-1></script>
 <link href="" type="text/css" media="screen, projection" rel="stylesheet" />
-<link href="css/bootstrap.min.css" rel="stylesheet" charset=ISO-8859-1">
+<link href="css/bootstrap.min.css" rel="stylesheet" charset=ISO-8859-1"/>
 <link href="css/style2.css" rel="stylesheet">
 <script language="javascript" src="js/Calendario.js" type=""></script>
 <script src="js/jquery.mask.min.js"></script>
